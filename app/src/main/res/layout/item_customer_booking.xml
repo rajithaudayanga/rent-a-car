@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/colorWhite"
+    android:id="@+id/item_booking">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mv_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:id="@+id/mv_vehicle_name"
+        android:text="lajdkjf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mv_price"
+        app:layout_constraintStart_toEndOf="@+id/mv_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mv_see_more"/>
+
+    <TextView
+        android:id="@+id/mv_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/mv_vehicle_name"
+        app:layout_constraintStart_toStartOf="@+id/mv_vehicle_name"
+        app:layout_constraintTop_toBottomOf="@+id/mv_vehicle_name"
+        app:layout_constraintBottom_toTopOf="@+id/mv_hire_date"/>
+
+    <TextView
+        android:id="@+id/mv_hire_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/mv_vehicle_name"
+        app:layout_constraintStart_toStartOf="@+id/mv_vehicle_name"
+        app:layout_constraintTop_toBottomOf="@+id/mv_price"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/mv_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/border_button"
+        android:text="@string/see_more"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/mv_vehicle_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

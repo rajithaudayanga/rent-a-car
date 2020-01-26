@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AvailableCheckActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_availability"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/check_from"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/border_button"
+            android:text="@string/from"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/textView1"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/check_to"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/border_button"
+            android:text="@string/to"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/check_from"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_availability"
+            app:layout_constraintTop_toBottomOf="@id/check_to"
+            android:background="@drawable/button_style_large"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

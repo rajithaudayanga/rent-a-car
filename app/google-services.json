@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "817814329836",
+    "firebase_url": "https://rent-a-car-d9f64.firebaseio.com",
+    "project_id": "rent-a-car-d9f64",
+    "storage_bucket": "rent-a-car-d9f64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817814329836:android:4527153a82fb03e3",
+        "android_client_info": {
+          "package_name": "com.example.rentacar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817814329836-rrave0uo5svnaaer94oknsptbupu1rgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw-ajXrOvhQb3r7dg6SownqdZYiWYcU2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817814329836-rrave0uo5svnaaer94oknsptbupu1rgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
